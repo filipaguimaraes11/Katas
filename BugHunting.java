@@ -44,7 +44,7 @@ public class BugHunting {
 
 
     //TODO Problem 8
-    //change the operator << to >> so it can make a shift right and not a shift left
+    //the last line if we put -1 will be a negative number
 
     //TODO Problem 9
     //if(!rgsToRead[ix] continue; should be changed to
