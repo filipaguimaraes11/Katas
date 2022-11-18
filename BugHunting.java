@@ -39,8 +39,8 @@ public class BugHunting {
     //index_64.length must be changed to (index_64.length-1) or (x >= index_64.length)
 
     //TODO Problem 7
-    //LOGGER cannot be applied to IOException, only to Exception
-    //To log with info level then should be written LOGGER.INFO
+    //we cannot call methods in a null / non-existent instance of a class  ---> dataTmpFile.createNewFile()
+
 
     //TODO Problem 8
     //change the operator << to >> so it can make a shift right and not a shift left

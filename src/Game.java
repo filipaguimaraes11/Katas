@@ -1,3 +1,9 @@
+import javafx.util.Pair;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Game {
 
     public static void main(String[] args) {
@@ -51,6 +57,43 @@ public class Game {
         //As a player I want to be able to choose my own substitutions So that I can tailor the game to my preferences (1, 2, 8)
 
         //As a player I want my substitutions to work the same way as Fizz Buzz So that the essence of the game remains the same (4, 9, 12)
+
+        List<Pair<String, String>> rules = new ArrayList<Pair<String, String>>();
+
+        System.out.println("Which game would you like to play?");
+        System.out.println("1. Fizz Buzz\n2. Fizz Buzz Pop\n3. Personalized");
+        Scanner stdin = new Scanner(System.in);
+        int gameAnswer = stdin.nextInt();
+        System.out.println(gameAnswer);
+
+        int num = 0;
+
+
+        switch(gameAnswer){
+            case 1 :
+                System.out.println("What will be the number");
+                num = stdin.nextInt();
+                fizzbuzz.playBasicGame(num);
+                break;
+            case 2 :
+                System.out.println("What will be the number");
+                num = stdin.nextInt();
+                fizzbuzz.playVariationGame(num);
+                break;
+            case 3 :
+                break;
+        }
+
+        System.out.println("Give us the multiplier");
+        int mult = stdin.nextInt();
+        System.out.println(mult);
+        System.out.println("Which word to use");
+        String word = stdin.next();
+        System.out.println(word);
+
+        Pair<String, String> pair = new Pair<String, String>(Integer.toString(mult), word);
+
+        rules.add(pair);
 
 
 
