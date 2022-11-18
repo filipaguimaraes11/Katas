@@ -36,7 +36,8 @@ public class BugHunting {
     //
 
     //TODO Problem 6
-    //index_64.length must be changed to (index_64.length-1) or (x >= index_64.length)
+    //1. index_64.length must be changed to (index_64.length-1) or (x >= index_64.length)
+    //2. the first condition of if clause will always return false because the char wont ever be negative
 
     //TODO Problem 7
     //we cannot call methods in a null / non-existent instance of a class  ---> dataTmpFile.createNewFile()

@@ -15,8 +15,8 @@ public class FizzBuzz {
             System.out.println("Buzz");
             return "Buzz";
         }
-        System.out.println("" + num);
-        return ""+num;
+        System.out.println("Your number is : "+num+" and its not a multiple of 3 or 5");
+        return "Your number is : "+num+" and its not a multiple of 3 or 5";
     }
 
 }

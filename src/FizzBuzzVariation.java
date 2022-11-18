@@ -19,7 +19,7 @@ public class FizzBuzzVariation extends FizzBuzz{
             }
         } else
             super.playBasicGame(num);
-
-        return "finish";
+        System.out.println("Your number is : "+num+" and its not even a multiple of 7");
+        return "Your number is : "+num+" and its not even a multiple of 7";
     }
 }
